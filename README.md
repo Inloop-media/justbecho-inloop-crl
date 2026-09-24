@@ -14,4 +14,4 @@ supplied by Inloop Media.
 - **Type:** Inter (display + body + labels)
 - **Palette:** charcoal `#111827` ground, gold `#af8b3f` accent, clean white type
 - **Pillars:** Becho Verified · The Luxury Find · JustBecho Knows · The Founder's Take · The Becho Community
-- **Grid:** 11 reference pieces (reels, statics + carousels) with pillar filters and a lightbox gallery
+- **Grid:** 12 reference pieces (reels, statics + carousels) with pillar filters and a lightbox gallery
