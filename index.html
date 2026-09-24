@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#af8b3f" />
+<title>JustBecho — Social Content Direction</title>
+<meta name="description" content="JustBecho — Creative Reference Link. Social Content Direction, Vol. 01. A verified-luxury-resale moodboard and reference grid by Inloop Media." />
+<meta property="og:title" content="JustBecho — Social Content Direction, Vol. 01" />
+<meta property="og:description" content="Find. Verify. Becho. The JustBecho content direction — reels, statics and carousels, sorted by pillar." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#111827;
+  --bg-2:#0A0E17;
+  --card:#19212F;
+  --card-2:#212B3D;
+  --card-bd:rgba(175,139,63,0.30);
+  --accent:#af8b3f;
+  --accent-2:#c9a253;
+  --accent-soft:rgba(175,139,63,0.10);
+  --cream:#F5F3EE;
+  --muted:rgba(245,243,238,0.56);
+  --ink:#111827;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(1150px 780px at 86% -10%, rgba(175,139,63,0.22), transparent 60%),
+    radial-gradient(940px 720px at 2% 104%, rgba(175,139,63,0.12), transparent 62%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+  background-attachment:fixed;
+  color:var(--cream);
+  font-family:'Inter',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  line-height:1.5;
+}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+
+/* NAVBAR */
+.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(17,24,39,0.80);border-bottom:1px solid var(--card-bd)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 24px;max-width:1240px;margin:0 auto}
+.nav-brand{display:flex;align-items:center;gap:11px}
+.nav-brand img{height:30px;width:auto;display:block}
+.nav-brand .wm{font-weight:800;font-size:18px;letter-spacing:.03em;color:var(--cream)}
+.nav-brand .wm b{color:var(--accent);font-weight:800}
+.nav-mid{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);white-space:nowrap;font-weight:500}
+.nav-mid b{color:var(--cream);font-weight:600}
+.nav-vol{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:600;white-space:nowrap}
+
+/* MARQUEE */
+.marquee{border-top:1px solid var(--card-bd);border-bottom:1px solid var(--card-bd);background:var(--accent-soft);overflow:hidden;white-space:nowrap;padding:12px 0}
+.marquee-track{display:inline-block;white-space:nowrap;will-change:transform;animation:scroll 38s linear infinite}
+.marquee.rev .marquee-track{animation-direction:reverse}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee span{font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--cream);padding:0 4px}
+.marquee .star{color:var(--accent);padding:0 22px}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* HERO */
+.hero{padding:82px 0 54px;text-align:center}
+.oneliner{font-size:clamp(12px,2vw,15px);letter-spacing:.20em;text-transform:uppercase;color:var(--accent-2);margin-bottom:22px;font-weight:500}
+.hero h1{font-weight:800;font-size:clamp(52px,13vw,172px);line-height:.92;letter-spacing:-.02em;text-transform:uppercase;color:var(--cream)}
+.hero h1 .dot{color:var(--accent)}
+.badge-card{margin:46px auto 0;max-width:680px;border:1px solid var(--card-bd);border-radius:16px;background:var(--card);box-shadow:0 26px 60px -34px rgba(0,0,0,0.8);padding:22px 30px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.badge-card .bc-brand{font-weight:800;font-size:21px;letter-spacing:.02em;color:var(--cream)}
+.badge-card .bc-brand b{color:var(--accent)}
+.badge-card .bc-mid{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.badge-card .bc-tag{font-size:12px;color:var(--accent-2);letter-spacing:.04em;font-weight:500}
+
+/* SECTIONS */
+.section{padding:62px 0}
+.eyebrow{font-size:12px;letter-spacing:.20em;text-transform:uppercase;color:var(--accent-2);margin-bottom:14px;font-weight:600}
+.section h2{font-weight:800;font-size:clamp(38px,7vw,76px);line-height:.98;text-transform:uppercase;letter-spacing:-.02em;color:var(--cream)}
+.subhead{margin-top:16px;max-width:640px;color:var(--muted);font-size:16px}
+
+/* PILLARS */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.pillar{border:1px solid var(--card-bd);border-radius:16px;background:var(--card);padding:28px 26px 32px;position:relative;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
+.pillar:hover{transform:translateY(-5px);box-shadow:0 26px 52px -30px rgba(175,139,63,0.5);border-color:rgba(175,139,63,0.6)}
+.pillar .pnum{font-weight:800;font-size:46px;color:var(--accent);line-height:1;letter-spacing:-.02em}
+.pillar h3{font-weight:700;font-size:22px;margin:10px 0 10px;letter-spacing:-.01em;color:var(--cream)}
+.pillar p{color:var(--muted);font-size:14.5px;line-height:1.62}
+
+/* FILTERS */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:38px 0 30px}
+.filter{font-size:12.5px;letter-spacing:.06em;padding:9px 17px;border-radius:999px;cursor:pointer;border:1px solid var(--card-bd);background:var(--card);color:var(--muted);text-transform:uppercase;transition:all .25s ease;white-space:nowrap;font-weight:500}
+.filter:hover{color:var(--cream);border-color:rgba(175,139,63,0.7)}
+.filter.active{background:var(--accent);color:#111827;border-color:var(--accent);font-weight:700}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tile{position:relative;border-radius:14px;overflow:hidden;cursor:pointer;border:1px solid var(--card-bd);background:var(--card);aspect-ratio:4/5;box-shadow:0 10px 30px -20px rgba(0,0,0,0.8);transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease}
+.tile:hover{transform:translateY(-4px);border-color:rgba(175,139,63,0.8);box-shadow:0 24px 50px -24px rgba(175,139,63,0.55)}
+.tile img,.tile video{width:100%;height:100%;object-fit:cover;display:block}
+.tile .tnum{position:absolute;top:10px;left:13px;z-index:3;font-weight:800;font-size:20px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.65)}
+.tile .meta{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:34px 13px 12px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px;background:linear-gradient(180deg,transparent,rgba(6,9,16,0.92))}
+.tile .cat{font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#fff;opacity:.95;line-height:1.3;font-weight:500}
+.fmt{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border-radius:999px;border:1px solid rgba(255,255,255,0.55);color:#fff;white-space:nowrap;flex:none;font-weight:600}
+.fmt.reel{background:var(--accent);color:#111827;border-color:var(--accent);font-weight:700}
+.fmt.carousel{border-color:rgba(255,255,255,0.85);color:#fff}
+.tile.car::before{content:"";position:absolute;top:-5px;right:8px;left:8px;height:12px;border-radius:12px 12px 0 0;background:var(--card-2);border:1px solid var(--card-bd);border-bottom:none;z-index:0}
+.carcount{position:absolute;top:11px;right:12px;z-index:4;display:flex;align-items:center;gap:5px;font-size:10.5px;color:#fff;background:rgba(6,9,16,0.55);border:1px solid rgba(255,255,255,0.4);padding:4px 8px;border-radius:999px;backdrop-filter:blur(2px);font-weight:500}
+.carcount svg{width:11px;height:11px;display:block}
+.play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;width:52px;height:52px;border-radius:50%;background:rgba(175,139,63,0.94);display:flex;align-items:center;justify-content:center;transition:opacity .3s ease;box-shadow:0 6px 20px -4px rgba(0,0,0,.6)}
+.play::after{content:"";border-left:14px solid #111827;border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+.tile:hover .play{opacity:0}
+
+/* LIGHTBOX */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(5,8,14,0.95);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:28px}
+.lb.open{display:flex}
+.lb-media{width:min(92vw,560px);max-height:88vh;border-radius:12px;overflow:hidden;box-shadow:0 40px 120px -30px #000;background:#000;display:flex;align-items:center;justify-content:center}
+.lb-media img,.lb-media video{width:100%;height:auto;max-height:88vh;object-fit:contain;display:block;background:#000}
+.lb-close{position:absolute;top:22px;right:26px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.1);color:#fff;font-size:22px;cursor:pointer;line-height:1;z-index:3}
+.lb-close:hover{border-color:var(--accent);color:#111827;background:var(--accent)}
+.lb-cap{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,0.72);font-weight:500}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.1);color:#fff;font-size:24px;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:3;line-height:1}
+.lb-nav:hover{border-color:var(--accent);color:#111827;background:var(--accent)}
+.lb.gallery .lb-nav{display:flex}
+.lb-prev{left:20px}.lb-next{right:20px}
+.lb-dots{position:absolute;bottom:52px;left:0;right:0;display:none;justify-content:center;gap:7px;z-index:3}
+.lb.gallery .lb-dots{display:flex}
+.lb-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.35);transition:all .2s ease;cursor:pointer}
+.lb-dots i.on{background:var(--accent);transform:scale(1.25)}
+@media(max-width:560px){.lb-nav{width:42px;height:42px;font-size:20px}.lb-prev{left:8px}.lb-next{right:8px}}
+
+/* FOOTER */
+.foot{padding:88px 0 60px;text-align:center}
+.foot .flogo{height:72px;width:auto;margin:0 auto 24px;display:block}
+.foot .fsmall{font-size:clamp(12px,2vw,14px);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;font-weight:500}
+.foot h2{font-weight:800;font-size:clamp(44px,12vw,140px);line-height:.92;text-transform:uppercase;color:var(--cream);letter-spacing:-.02em}
+.foot h2 .dot{color:var(--accent)}
+.foot .ftag{margin-top:24px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.foot .fcredit{margin-top:10px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,243,238,0.4);font-weight:500}
+.byline{margin-top:42px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,243,238,0.42);font-weight:500}
+.byline a{color:var(--accent-2);text-decoration:none}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.pillars{grid-template-columns:1fr}.nav-mid{display:none}}
+@media(max-width:560px){.wrap{padding:0 18px}.nav-inner{padding:10px 18px}.grid{grid-template-columns:1fr}.hero{padding:54px 0 38px}.section{padding:48px 0}.badge-card{flex-direction:column;align-items:flex-start;text-align:left}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand"><img src="media/justbecho-logo.png" alt="JustBecho" /><span class="wm">Just<b>Becho</b></span></div>
+    <div class="nav-mid">Est. — <b>Find. Verify. Becho.</b></div>
+    <div class="nav-vol">Vol. 01</div>
+  </div>
+</nav>
+
+<div class="marquee"><div class="marquee-track" id="mq1"></div></div>
+
+<header class="hero wrap">
+  <div class="oneliner reveal">verified luxury, resold with trust</div>
+  <h1 class="reveal">Find<span class="dot">.</span> Verify<span class="dot">.</span> Becho<span class="dot">.</span></h1>
+  <div class="badge-card reveal">
+    <div class="bc-brand">Just<b>Becho</b></div>
+    <div class="bc-mid">Social Content Direction</div>
+    <div class="bc-tag">no.1 — moodboard</div>
+  </div>
+</header>
+
+<section class="section wrap">
+  <div class="eyebrow reveal">the edit —</div>
+  <h2 class="reveal">Content Pillars</h2>
+  <p class="subhead reveal">Five ways JustBecho shows up online. One marketplace, verified and trusted — across every format.</p>
+  <div class="pillars">
+    <div class="pillar reveal"><div class="pnum">01</div><h3>Becho Verified</h3><p>Every piece authenticated. The proof and process behind verified luxury resale.</p></div>
+    <div class="pillar reveal"><div class="pnum">02</div><h3>The Luxury Find</h3><p>The hero pieces — coveted bags, watches and finds, styled to covet.</p></div>
+    <div class="pillar reveal"><div class="pnum">03</div><h3>JustBecho Knows</h3><p>Expertise on tap — how to spot, value and care for luxury the right way.</p></div>
+    <div class="pillar reveal"><div class="pnum">04</div><h3>The Founder's Take</h3><p>The voice behind JustBecho — vision, trust and the why that built the platform.</p></div>
+    <div class="pillar reveal"><div class="pnum">05</div><h3>The Becho Community</h3><p>The sellers and buyers who make the marketplace — real people, real finds.</p></div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="eyebrow reveal">the feed —</div>
+  <h2 class="reveal">Reference Grid</h2>
+  <p class="subhead reveal">11 pieces. Reels, statics + carousels — sorted 01 through 11. Tap any tile to open it full-size.</p>
+  <div class="filters reveal" id="filters">
+    <button class="filter active" data-f="all">All</button>
+    <button class="filter" data-f="verified">Becho Verified</button>
+    <button class="filter" data-f="luxury">The Luxury Find</button>
+    <button class="filter" data-f="knows">JustBecho Knows</button>
+    <button class="filter" data-f="founder">The Founder's Take</button>
+    <button class="filter" data-f="community">The Becho Community</button>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<div class="marquee rev"><div class="marquee-track" id="mq2"></div></div>
+
+<footer class="foot wrap">
+  <img class="flogo" src="media/justbecho-logo.png" alt="JustBecho" />
+  <div class="fsmall reveal">that's the becho.</div>
+  <h2 class="reveal">See You<span class="dot">,</span> JustBecho<span class="dot">.</span></h2>
+  <div class="ftag reveal">Find. Verify. Becho. — verified luxury, resold with trust.</div>
+  <div class="fcredit reveal">Social Content Direction — Vol. 01</div>
+  <div class="fcredit reveal">JustBecho® 2026 ©</div>
+  <div class="byline reveal">Built by <a href="#">Inloop Media</a></div>
+</footer>
+
+<div class="lb" id="lb">
+  <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+  <div class="lb-media" id="lbMedia"></div>
+  <div class="lb-dots" id="lbDots"></div>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script>
+var CAT = {
+  "verified":"Becho Verified",
+  "luxury":"The Luxury Find",
+  "knows":"JustBecho Knows",
+  "founder":"The Founder's Take",
+  "community":"The Becho Community"
+};
+function slidesImg(base,n){var a=[];for(var i=1;i<=n;i++){a.push({t:"img",src:"media/"+base+"-slide-"+(i<10?"0"+i:i)+".jpg"});}return a;}
+
+var TILES = [
+  {n:"01",p:"verified",f:"carousel",type:"car",slides:slidesImg("grid-01-verified",5)},
+  {n:"02",p:"verified",f:"reel",type:"vid",src:"media/grid-02-verified-reel.mp4",poster:"media/grid-02-verified-reel-poster.jpg"},
+  {n:"03",p:"luxury",f:"static",type:"img",src:"media/grid-03-luxury-static.jpg"},
+  {n:"04",p:"luxury",f:"reel",type:"vid",src:"media/grid-04-luxury-reel.mp4",poster:"media/grid-04-luxury-reel-poster.jpg"},
+  {n:"05",p:"luxury",f:"carousel",type:"car",slides:slidesImg("grid-05-luxury",7)},
+  {n:"06",p:"knows",f:"carousel",type:"car",slides:slidesImg("grid-06-knows",6)},
+  {n:"07",p:"knows",f:"carousel",type:"car",slides:slidesImg("grid-07-knows",5)},
+  {n:"08",p:"founder",f:"reel",type:"vid",src:"media/grid-08-founder-reel.mp4",poster:"media/grid-08-founder-reel-poster.jpg"},
+  {n:"09",p:"founder",f:"carousel",type:"car",slides:slidesImg("grid-09-founder",9)},
+  {n:"10",p:"community",f:"reel",type:"vid",src:"media/grid-10-community-reel.mp4",poster:"media/grid-10-community-reel-poster.jpg"},
+  {n:"11",p:"community",f:"static",type:"img",src:"media/grid-11-community-static.jpg"}
+];
+
+(function(){
+  var phrases=["Becho Verified","The Luxury Find","Authenticated Always","Luxury Resold","Trusted By Thousands","Find · Verify · Becho"];
+  function build(){var h="";for(var k=0;k<2;k++){for(var i=0;i<phrases.length;i++){h+='<span>'+phrases[i]+'</span><span class="star">✦</span>';}}return h;}
+  document.getElementById('mq1').innerHTML=build();
+  document.getElementById('mq2').innerHTML=build();
+})();
+
+var grid=document.getElementById('grid');
+function render(filter){
+  grid.innerHTML="";
+  TILES.forEach(function(t){
+    if(filter!=="all" && t.p!==filter) return;
+    var el=document.createElement('div');
+    el.className="tile"+(t.type==="car"?" car":"");
+    el.setAttribute('data-p',t.p);
+    var media, extra="";
+    if(t.type==="img"){
+      media='<img loading="lazy" src="'+t.src+'" alt="'+CAT[t.p]+'">';
+    } else if(t.type==="car"){
+      var s0=t.slides[0];
+      var thumb = s0.t==="vid" ? s0.poster : s0.src;
+      media='<img loading="lazy" src="'+thumb+'" alt="'+CAT[t.p]+'">';
+      extra='<div class="carcount"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="14" rx="2"></rect><path d="M21 7v12a2 2 0 0 1-2 2H7"></path></svg>'+t.slides.length+'</div>';
+    } else {
+      media='<video muted loop playsinline preload="none" poster="'+t.poster+'"><source src="'+t.src+'" type="video/mp4"></video><div class="play"></div>';
+    }
+    el.innerHTML='<div class="tnum">'+t.n+'</div>'+ extra + media +'<div class="meta"><span class="cat">'+CAT[t.p]+'</span><span class="fmt '+t.f+'">'+t.f+'</span></div>';
+    if(t.type==="vid"){var v=el.querySelector('video');el.addEventListener('mouseenter',function(){v.play().catch(function(){});});el.addEventListener('mouseleave',function(){v.pause();});}
+    el.addEventListener('click',function(){ openLB(t); });
+    grid.appendChild(el);
+  });
+  observe();
+}
+
+document.getElementById('filters').addEventListener('click',function(e){
+  var b=e.target.closest('.filter'); if(!b) return;
+  [].forEach.call(this.querySelectorAll('.filter'),function(x){x.classList.remove('active')});
+  b.classList.add('active');
+  render(b.getAttribute('data-f'));
+});
+
+var lb=document.getElementById('lb'),lbMedia=document.getElementById('lbMedia'),lbCap=document.getElementById('lbCap'),lbDots=document.getElementById('lbDots');
+var curT=null, curI=0;
+function slideHTML(s){
+  return s.t==="vid"
+    ? '<video src="'+s.src+'" poster="'+(s.poster||'')+'" controls autoplay loop playsinline></video>'
+    : '<img src="'+s.src+'" alt="carousel slide">';
+}
+function showSlide(i){
+  var t=curT; if(!t) return;
+  var n=t.slides.length; curI=(i+n)%n;
+  lbMedia.innerHTML=slideHTML(t.slides[curI]);
+  var dots=''; for(var k=0;k<n;k++){ dots+='<i class="'+(k===curI?'on':'')+'" data-k="'+k+'"></i>'; }
+  lbDots.innerHTML=dots;
+  lbCap.textContent = t.n+" — "+CAT[t.p]+" · carousel · "+(curI+1)+"/"+n;
+}
+function openLB(t){
+  curT=t;
+  if(t.type==="car"){ lb.classList.add('gallery'); showSlide(0); }
+  else {
+    lb.classList.remove('gallery');
+    lbMedia.innerHTML = t.type==="img" ? '<img src="'+t.src+'" alt="'+CAT[t.p]+'">' : '<video src="'+t.src+'" poster="'+t.poster+'" controls autoplay loop playsinline></video>';
+    lbCap.textContent = t.n+" — "+CAT[t.p]+" · "+t.f;
+  }
+  lb.classList.add('open');
+  document.body.style.overflow="hidden";
+}
+function closeLB(){ lb.classList.remove('open'); lb.classList.remove('gallery'); lbMedia.innerHTML=""; lbDots.innerHTML=""; curT=null; document.body.style.overflow=""; }
+document.getElementById('lbClose').addEventListener('click',closeLB);
+document.getElementById('lbPrev').addEventListener('click',function(e){ e.stopPropagation(); showSlide(curI-1); });
+document.getElementById('lbNext').addEventListener('click',function(e){ e.stopPropagation(); showSlide(curI+1); });
+lbDots.addEventListener('click',function(e){ var d=e.target.closest('i'); if(d){ e.stopPropagation(); showSlide(+d.getAttribute('data-k')); } });
+lb.addEventListener('click',function(e){ if(e.target===lb) closeLB(); });
+document.addEventListener('keydown',function(e){
+  if(!lb.classList.contains('open')) return;
+  if(e.key==="Escape") closeLB();
+  else if(curT && curT.type==="car"){ if(e.key==="ArrowRight") showSlide(curI+1); else if(e.key==="ArrowLeft") showSlide(curI-1); }
+});
+
+var io;
+function observe(){
+  if(!io){ io=new IntersectionObserver(function(entries){ entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } }); },{threshold:0.12}); }
+  document.querySelectorAll('.reveal:not(.in),.tile').forEach(function(el){ if(el.classList.contains('tile')){ el.classList.add('reveal'); } io.observe(el); });
+}
+render("all");
+observe();
+</script>
+</body>
+</html>
